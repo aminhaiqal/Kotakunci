@@ -1,0 +1,15 @@
+{
+  "name": "kotakunci",
+  "version": "1.0.0",
+  "description": "Kotakunci is a standalone password manager desktop application designed to help users securely store, manage, and maintain their online credentials and sensitive information. This open-source password manager provides a convenient and highly secure solution for users who value data privacy and strong security practices.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amin Haiqal",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.3"
+  }
+}
