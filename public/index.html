@@ -8,15 +8,38 @@
     
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-    <br>
-    <div id="form"></div>
-    <div id="list"></div>
+    <h1>Password Manager</h1>
     
-    <script src="../src/form.js"></script>
-    <script src="../src/list.js"></script>
+    <h2>Add Password</h2>
+    <form id="addPasswordForm">
+      <label for="website">Website:</label>
+      <input type="text" id="website" required>
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      
+      <button type="submit">Add Password</button>
+    </form>
+    
+    <h2>All Passwords</h2>
+    <table id="passwordTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Password entries will be displayed here -->
+      </tbody>
+    </table>
+  
+    <script src="../src/renderer.js"></script>
   </body>
 </html>
